@@ -137,7 +137,7 @@
 					<center><br>
 			<h2 style="color:black;margin-left:300px;margin-right:250px;font-family:ariel">Welcome to FindMyExpense!!</h2>
 			<br>
-			<form action="http://localhost:8080/public/registeruser"method="GET">
+			<form th:action="@{/public/register}"method="GET" >
 			  <h4>
 			 <label for="">Name:</label>
 		 <input type="text" name="username" required><br><br>
@@ -152,7 +152,7 @@
 				</h4>
 
 				 </form>
-			<form action="http://localhost:8080/public/forgotpassword"method-="GET">
+			<form th:action="@{/public/forgotpassword}"method="GET">
 			<input type="submit"value="forgot password">
 		</form>
 	<a href="#">contact support for help</a>
